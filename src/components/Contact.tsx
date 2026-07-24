@@ -27,7 +27,6 @@ const budgetRanges = [
   "Not sure yet",
 ];
 
-/** Encodes form fields the way Netlify's form-handling endpoint expects. */
 function encodeFormData(data: Record<string, string>) {
   return Object.keys(data)
     .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
@@ -46,16 +45,12 @@ export default function Contact() {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
-    const payload: Record<string, string> = { "form-name": "contact" };
-    formData.forEach((value, key) => {
-      payload[key] = value.toString();
-    });
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("https://formspree.io/f/mnjegelj", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encodeFormData(payload),
+        headers: { Accept: "application/json" },
+        body: formData,
       });
 
       if (!response.ok) throw new Error("Form submission failed");
@@ -145,21 +140,11 @@ export default function Contact() {
                   </p>
                 </div>
               ) : (
-                <form
-                  name="contact"
-                  onSubmit={handleSubmit}
-                  className="space-y-5"
-                  data-netlify="true"
-                  data-netlify-honeypot="bot-field"
-                >
-                  {/* Required so Netlify's endpoint knows which registered form this is */}
-                  <input type="hidden" name="form-name" value="contact" />
-
-                  {/* Honeypot — hidden from real visitors, catches basic bots */}
+                <form onSubmit={handleSubmit} className="space-y-5">
                   <p className="hidden">
                     <label>
                       Don't fill this out if you're human:{" "}
-                      <input name="bot-field" />
+                      <input name="_gotcha" />
                     </label>
                   </p>
 
