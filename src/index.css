@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink-950 text-mist-100 font-body;
+    font-feature-settings: 'ss01' on;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display text-mist-50;
+  }
+
+  ::selection {
+    @apply bg-brand-violet/40 text-white;
+  }
+
+  :focus-visible {
+    outline: 2px solid #7C8CFF;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-10;
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs font-semibold uppercase tracking-[0.14em] text-brand-blueLight;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-gradient px-6 py-3.5
+           text-sm font-semibold text-white shadow-glow transition-transform duration-300
+           hover:scale-[1.03] active:scale-[0.98] focus-visible:outline-offset-4;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.03]
+           px-6 py-3.5 text-sm font-semibold text-mist-100 backdrop-blur-sm transition-all duration-300
+           hover:border-white/30 hover:bg-white/[0.06];
+  }
+
+  .card-surface {
+    @apply rounded-2xl border border-white/[0.07] bg-white/[0.02] shadow-card backdrop-blur-sm;
+  }
+
+  .section-pad {
+    @apply py-24 sm:py-28 lg:py-32;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-brand-gradient bg-clip-text text-transparent;
+  }
+
+  .mask-fade-b {
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
