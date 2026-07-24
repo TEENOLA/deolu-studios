@@ -69,3 +69,4 @@ Same pattern: edit the matching file in `src/data/` and the UI updates automatic
 
 Colors, fonts, and animation keyframes are defined in `tailwind.config.js` and `src/index.css`, derived from the deolustudios logo (blue `#5B6EF5` → violet `#8B5CF6` gradient on a near-black background).
 # deolu-studios
+# deolu-studios
