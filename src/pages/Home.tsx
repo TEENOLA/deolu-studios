@@ -6,7 +6,6 @@ import WhyUs from "../components/WhyUs";
 import Services from "../components/Services";
 import FeaturedProjects from "../components/FeaturedProjects";
 import Process from "../components/Process";
-import Testimonials from "../components/Testimonials";
 import CTA from "../components/CTA";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";

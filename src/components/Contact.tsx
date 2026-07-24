@@ -18,21 +18,6 @@ const projectTypes = [
   "Other",
 ];
 
-const budgetRanges = [
-  "Under $500",
-  "$500 - $1,000",
-  "$1,000 – $3,000",
-  "$3,000 – $7,000",
-  "$7,000+",
-  "Not sure yet",
-];
-
-function encodeFormData(data: Record<string, string>) {
-  return Object.keys(data)
-    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-    .join("&");
-}
-
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -178,12 +163,6 @@ export default function Contact() {
                       options={projectTypes}
                     />
                   </div>
-
-                  {/* <SelectField
-                    label="Budget (optional)"
-                    name="budget"
-                    options={budgetRanges}
-                  /> */}
 
                   <div>
                     <label
