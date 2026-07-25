@@ -36,7 +36,6 @@ export const projects: Project[] = [
       "A full booking platform for salons and barbershops — live client booking flow, a multi-step salon onboarding wizard, and a real-time dashboard for tracking appointments, revenue, and no-show rates.",
     technologies: ["React", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://velvet-glow-beige.vercel.app",
-    githubUrl: "#",
     featured: true,
   },
   {
@@ -48,7 +47,6 @@ export const projects: Project[] = [
       "A conversion-focused landing page for a Dallas car detailing studio — built around instant appointment booking and a call-to-action tuned for mobile leads.",
     technologies: ["React", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://ade-apex-detail.netlify.app",
-    githubUrl: "#",
     featured: true,
   },
   {
@@ -71,7 +69,6 @@ export const projects: Project[] = [
       "A full business site for a bakery and catering brand — menu showcase, catering inquiry form, and a warm, appetite-driven visual identity.",
     technologies: ["React", "Vite", "Tailwind CSS"],
     liveUrl: "https://ade-sweet-crumbs.netlify.app/",
-    githubUrl: "#",
     featured: true,
   },
   {
@@ -83,7 +80,6 @@ export const projects: Project[] = [
       "A clean, booking-first landing page for an Atlanta barbershop — built to turn walk-in interest into scheduled appointments.",
     technologies: ["React", "Tailwind CSS"],
     liveUrl: "https://ade-fresh-cuts.netlify.app/",
-    githubUrl: "#",
     featured: true,
   },
   {
@@ -106,7 +102,6 @@ export const projects: Project[] = [
       "A full invoice management system for bakeries — built from a real ordering workflow, right down to a cake configurator for layers, flavors, size, and covering.",
     technologies: ["React", "TypeScript", "Recharts"],
     liveUrl: "https://cbc-invoice.vercel.app",
-    githubUrl: "#",
     featured: true,
   },
   {
