@@ -84,17 +84,14 @@ export default function Contact() {
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gradient-soft">
                       <Mail size={17} className="text-brand-blueLight" />
                     </span>
-                    hello@deolustudios.com
+                    deolustudios.dev@gmail.com
                   </a>
-                  <a
-                    href="tel:+10000000000"
-                    className="flex items-center gap-3 text-sm text-mist-200 hover:text-brand-blueLight"
-                  >
+                  <div className="flex items-center gap-3 text-sm text-mist-200 hover:text-brand-blueLight">
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gradient-soft">
                       <Phone size={17} className="text-brand-blueLight" />
                     </span>
                     +234 812 051 1818 (WHATSAPP)
-                  </a>
+                  </div>
                   <div className="flex items-center gap-3 text-sm text-mist-200">
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gradient-soft">
                       <MapPin size={17} className="text-brand-blueLight" />
