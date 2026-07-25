@@ -4,6 +4,8 @@ import sweet from "../assets/sweet.png";
 import modern from "../assets/modern.png";
 import glp from "../assets/glp.png";
 import course from "../assets/course.png";
+import invoice from "../assets/cbc-invoice.png";
+import velvet from "../assets/velvet.png";
 
 export type ProjectCategory =
   | "Business"
@@ -24,22 +26,41 @@ export interface Project {
   featured: boolean;
 }
 
-/**
- * Add new work by appending an object to this array.
- * No component logic needs to change — FeaturedProjects and the
- * Portfolio page both read from this file directly.
- */
 export const projects: Project[] = [
+  {
+    id: "velvet-glow-booking",
+    title: "Velvet Glow",
+    category: "Web Apps",
+    thumbnail: velvet,
+    description:
+      "A full booking platform for salons and barbershops — live client booking flow, a multi-step salon onboarding wizard, and a real-time dashboard for tracking appointments, revenue, and no-show rates.",
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    liveUrl: "https://velvet-glow-beige.vercel.app",
+    githubUrl: "#",
+    featured: true,
+  },
   {
     id: "apex-details",
     title: "Apex Detailing",
     category: "Landing Pages",
     thumbnail: apex,
-    description: "A landing page for a car detailing company in Dallas, Texas",
+    description:
+      "A conversion-focused landing page for a Dallas car detailing studio — built around instant appointment booking and a call-to-action tuned for mobile leads.",
     technologies: ["React", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://ade-apex-detail.netlify.app",
     githubUrl: "#",
     featured: true,
+  },
+  {
+    id: "glp-logistics",
+    title: "GLP Logistics",
+    category: "Landing Pages",
+    thumbnail: glp,
+    description:
+      "A logistics company site with a live delivery cost estimator and mock package-tracking flow, built as a speculative pitch for a real courier business.",
+    technologies: ["React", "Tailwind CSS", "Mapbox"],
+    liveUrl: "https://glp-logistics.vercel.app/",
+    featured: false,
   },
   {
     id: "sweet-crumbs",
@@ -47,7 +68,7 @@ export const projects: Project[] = [
     category: "Business",
     thumbnail: sweet,
     description:
-      "Sweet, savory and everything in between! Quality bakes and pastries for your dining and catering needs",
+      "A full business site for a bakery and catering brand — menu showcase, catering inquiry form, and a warm, appetite-driven visual identity.",
     technologies: ["React", "Vite", "Tailwind CSS"],
     liveUrl: "https://ade-sweet-crumbs.netlify.app/",
     githubUrl: "#",
@@ -58,8 +79,9 @@ export const projects: Project[] = [
     title: "Fresh Cuts ATL",
     category: "Landing Pages",
     thumbnail: fresh,
-    description: "A landing page for a barbing salon in Atlanta",
-    technologies: ["React", "TypeScript", "Stripe"],
+    description:
+      "A clean, booking-first landing page for an Atlanta barbershop — built to turn walk-in interest into scheduled appointments.",
+    technologies: ["React", "Tailwind CSS"],
     liveUrl: "https://ade-fresh-cuts.netlify.app/",
     githubUrl: "#",
     featured: true,
@@ -69,9 +91,22 @@ export const projects: Project[] = [
     title: "Modern Auto Spa",
     category: "Business",
     thumbnail: modern,
-    description: "A business page for a car detailing company",
+    description:
+      "A polished business site for a car detailing company, with a before/after showcase and service tiers built to justify premium pricing.",
     technologies: ["React", "Tailwind CSS"],
     liveUrl: "https://modern-autospa.netlify.app/",
+    featured: true,
+  },
+  {
+    id: "cbc-invoice",
+    title: "Cakes B' Caking Invoice Generator",
+    category: "Web Apps",
+    thumbnail: invoice,
+    description:
+      "A full invoice management system for bakeries — built from a real ordering workflow, right down to a cake configurator for layers, flavors, size, and covering.",
+    technologies: ["React", "TypeScript", "Recharts"],
+    liveUrl: "https://cbc-invoice.vercel.app",
+    githubUrl: "#",
     featured: true,
   },
   {
@@ -80,21 +115,9 @@ export const projects: Project[] = [
     category: "Web Apps",
     thumbnail: course,
     description:
-      "An app that simulates enrolling courses, and filtering based on select criteria",
+      "A course marketplace simulation with real filtering, search, and enrollment flows — modeled on platforms like Udemy and Coursera.",
     technologies: ["React", "TypeScript", "TanStack Query"],
     liveUrl: "https://ade-lms.netlify.app/",
-    githubUrl: "#",
     featured: true,
-  },
-  {
-    id: "glp-logistics",
-    title: "GLP Logistics",
-    category: "Landing Pages",
-    thumbnail: glp,
-    description:
-      "A logistics company landing page equipped with tracking software",
-    technologies: ["React", "Tailwind CSS", "Mapbox"],
-    liveUrl: "https://glp-logistics.vercel.app/",
-    featured: false,
   },
 ];
