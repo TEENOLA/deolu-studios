@@ -57,7 +57,7 @@ export const projects: Project[] = [
     category: "Landing Pages",
     thumbnail: glp,
     description:
-      "A logistics company site with a live delivery cost estimator and mock package-tracking flow, built as a speculative pitch for a real courier business.",
+      "A logistics company site with a mock package-tracking flow, built as a speculative pitch for a real courier business.",
     technologies: ["React", "Tailwind CSS", "Mapbox"],
     liveUrl: "https://glp-logistics.vercel.app/",
     featured: false,
