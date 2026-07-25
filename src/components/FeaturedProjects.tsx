@@ -1,15 +1,15 @@
-import { ArrowRight } from 'lucide-react'
-import { Link } from 'react-router-dom'
-import { projects } from '../data/projects'
-import ProjectCard from './ProjectCard'
-import Reveal from './Reveal'
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { projects } from "../data/projects";
+import ProjectCard from "./ProjectCard";
+import Reveal from "./Reveal";
 
-const MAX_HOME_PROJECTS = 8
+const MAX_HOME_PROJECTS = 9;
 
 export default function FeaturedProjects() {
   // Home page shows a curated snapshot, not the whole catalog — the
   // /projects page is where people go to browse everything.
-  const featured = projects.slice(0, MAX_HOME_PROJECTS)
+  const featured = projects.slice(0, MAX_HOME_PROJECTS);
 
   return (
     <section id="portfolio" className="section-pad relative">
@@ -41,5 +41,5 @@ export default function FeaturedProjects() {
         </Reveal>
       </div>
     </section>
-  )
+  );
 }
