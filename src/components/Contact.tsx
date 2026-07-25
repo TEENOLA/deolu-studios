@@ -93,7 +93,7 @@ export default function Contact() {
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gradient-soft">
                       <Phone size={17} className="text-brand-blueLight" />
                     </span>
-                    +234 812 051 1818
+                    +234 812 051 1818 (WHATSAPP)
                   </a>
                   <div className="flex items-center gap-3 text-sm text-mist-200">
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gradient-soft">
