@@ -6,6 +6,7 @@ import glp from "../assets/glp.png";
 import course from "../assets/course.png";
 import invoice from "../assets/cbc-invoice.png";
 import velvet from "../assets/velvet.png";
+import omotola from "../assets/omotola.png";
 
 export type ProjectCategory =
   | "Business"
@@ -69,6 +70,17 @@ export const projects: Project[] = [
       "A full business site for a bakery and catering brand — menu showcase, catering inquiry form, and a warm, appetite-driven visual identity.",
     technologies: ["React", "Vite", "Tailwind CSS"],
     liveUrl: "https://ade-sweet-crumbs.netlify.app/",
+    featured: true,
+  },
+  {
+    id: "omotola-firm",
+    title: "Omotola & Partners LLP",
+    category: "Business",
+    thumbnail: omotola,
+    description:
+      "A premium, multi-page website for Omotola & Partners LLP, a fictional full-service commercial law firm based in Lagos, Nigeria.",
+    technologies: ["React", "Vite", "Tailwind CSS"],
+    liveUrl: "https://omotola-and-partners.vercel.app",
     featured: true,
   },
   {
