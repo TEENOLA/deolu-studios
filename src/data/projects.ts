@@ -42,7 +42,7 @@ export const projects: Project[] = [
   },
   {
     id: "jide-osikoya",
-    title: "Jide Osikoya & co Chartered Accountants",
+    title: "Jide Osikoya & Co Chartered Accountants",
     category: "Business",
     thumbnail: jide,
     description:
