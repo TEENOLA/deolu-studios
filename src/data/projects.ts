@@ -7,6 +7,7 @@ import course from "../assets/course.png";
 import invoice from "../assets/cbc-invoice.png";
 import velvet from "../assets/velvet.png";
 import omotola from "../assets/omotola.png";
+import jide from "../assets/jide.png";
 
 export type ProjectCategory =
   | "Business"
@@ -37,6 +38,17 @@ export const projects: Project[] = [
       "A full booking platform for salons and barbershops — live client booking flow, a multi-step salon onboarding wizard, and a real-time dashboard for tracking appointments, revenue, and no-show rates.",
     technologies: ["React", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://velvet-glow-beige.vercel.app",
+    featured: true,
+  },
+  {
+    id: "jide-osikoya",
+    title: "Jide Osikoya & co Chartered Accountants",
+    category: "Business",
+    thumbnail: jide,
+    description:
+      "A corporate homepage for Jide Osikoya & Co., a Nigerian chartered accounting and advisory firm in Ikeja, Lagos",
+    technologies: ["React", "Vite", "Tailwind CSS"],
+    liveUrl: "https://jide-osikoya.vercel.app/",
     featured: true,
   },
   {
