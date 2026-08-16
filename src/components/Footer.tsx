@@ -1,20 +1,20 @@
-import { useNavigate, useLocation, Link } from 'react-router-dom'
-import { Twitter, Linkedin, Instagram, Github } from 'lucide-react'
-import { navLinks, socialLinks } from '../data/navigation'
-import { services } from '../data/services'
-import { goToHomeSection } from '../utils/scrollTo'
-import logo from '../assets/logo.png'
+import { useNavigate, useLocation, Link } from "react-router-dom";
+import { Twitter, Linkedin, Instagram, Github } from "lucide-react";
+import { navLinks, socialLinks } from "../data/navigation";
+import { services } from "../data/services";
+import { goToHomeSection } from "../utils/scrollTo";
+import logo from "../assets/logo.png";
 
 const socialIcons: Record<string, typeof Twitter> = {
   Twitter,
   LinkedIn: Linkedin,
   Instagram,
   GitHub: Github,
-}
+};
 
 export default function Footer() {
-  const navigate = useNavigate()
-  const location = useLocation()
+  const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <footer className="relative border-t border-white/[0.06] bg-ink-950">
@@ -24,21 +24,27 @@ export default function Footer() {
             <Link
               to="/"
               onClick={(e) => {
-                e.preventDefault()
-                goToHomeSection('#home', location.pathname, navigate)
+                e.preventDefault();
+                goToHomeSection("#home", location.pathname, navigate);
               }}
               className="flex items-center gap-2.5"
             >
-              <img src={logo} alt="deolustudios" className="h-8 w-8 rounded-lg" />
-              <span className="font-display text-lg font-semibold text-mist-50">deolustudios</span>
+              <img
+                src={logo}
+                alt="deolustudios"
+                className="h-8 w-8 rounded-lg"
+              />
+              <span className="font-display text-lg font-semibold text-mist-50">
+                deolustudios
+              </span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-mist-400">
-              A web design and development studio building custom, fast, and
-              conversion-focused websites for businesses that want to stand out online.
+              Websites built to turn visitors into customers — fast,
+              conversion-focused, and made to help your business grow online.
             </p>
             <div className="mt-6 flex gap-3">
               {socialLinks.map((social) => {
-                const Icon = socialIcons[social.label]
+                const Icon = socialIcons[social.label];
                 return (
                   <a
                     key={social.label}
@@ -48,7 +54,7 @@ export default function Footer() {
                   >
                     {Icon && <Icon size={15} />}
                   </a>
-                )
+                );
               })}
             </div>
           </div>
@@ -61,12 +67,12 @@ export default function Footer() {
                   <a
                     href={link.href}
                     onClick={(e) => {
-                      e.preventDefault()
-                      if (link.type === 'route') {
-                        navigate(link.href)
-                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                      e.preventDefault();
+                      if (link.type === "route") {
+                        navigate(link.href);
+                        window.scrollTo({ top: 0, behavior: "smooth" });
                       } else {
-                        goToHomeSection(link.href, location.pathname, navigate)
+                        goToHomeSection(link.href, location.pathname, navigate);
                       }
                     }}
                     className="text-sm text-mist-400 transition-colors hover:text-mist-100"
@@ -86,8 +92,12 @@ export default function Footer() {
                   <a
                     href={service.learnMoreHref}
                     onClick={(e) => {
-                      e.preventDefault()
-                      goToHomeSection(service.learnMoreHref, location.pathname, navigate)
+                      e.preventDefault();
+                      goToHomeSection(
+                        service.learnMoreHref,
+                        location.pathname,
+                        navigate
+                      );
                     }}
                     className="text-sm text-mist-400 transition-colors hover:text-mist-100"
                   >
@@ -103,9 +113,11 @@ export default function Footer() {
           <p className="text-xs text-mist-500">
             © {new Date().getFullYear()} deolustudios. All rights reserved.
           </p>
-          <p className="text-xs text-mist-500">Designed &amp; built by deolustudios.</p>
+          <p className="text-xs text-mist-500">
+            Designed &amp; built by deolustudios.
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

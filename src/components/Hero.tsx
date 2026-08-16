@@ -1,5 +1,5 @@
-import { ArrowRight, PlayCircle } from 'lucide-react'
-import { scrollToSection } from '../utils/scrollTo'
+import { ArrowRight, PlayCircle } from "lucide-react";
+import { scrollToSection } from "../utils/scrollTo";
 
 export default function Hero() {
   return (
@@ -20,25 +20,32 @@ export default function Hero() {
       <div className="container-page relative">
         <div className="mx-auto max-w-3xl text-center animate-fadeUp">
           <p className="eyebrow mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-ink-900/60 px-4 py-1.5 backdrop-blur-sm">
-            Custom Web Design &amp; Development
+            For Businesses Ready to Grow Online
           </p>
 
           <h1 className="text-4xl font-semibold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Custom Websites That Help Your{' '}
-            <span className="text-gradient">Business Stand Out</span> and Grow
+            Turn Your Website Into a{" "}
+            <span className="text-gradient">24/7 Salesperson</span> for Your
+            Business
           </h1>
 
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-mist-300 sm:text-lg">
-            We design and build fast, responsive, and conversion-focused websites
-            tailored to your brand, your business goals, and your budget.
+            Get a fast, responsive, conversion-focused website — built around
+            your brand, your business goals, and your budget.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <button onClick={() => scrollToSection('#contact')} className="btn-primary w-full sm:w-auto">
+            <button
+              onClick={() => scrollToSection("#contact")}
+              className="btn-primary w-full sm:w-auto"
+            >
               Start Your Project
               <ArrowRight size={16} />
             </button>
-            <button onClick={() => scrollToSection('#portfolio')} className="btn-secondary w-full sm:w-auto">
+            <button
+              onClick={() => scrollToSection("#portfolio")}
+              className="btn-secondary w-full sm:w-auto"
+            >
               <PlayCircle size={16} />
               View Our Work
             </button>
@@ -93,5 +100,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

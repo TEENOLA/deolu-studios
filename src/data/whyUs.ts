@@ -1,4 +1,4 @@
-import type { LucideIcon } from 'lucide-react'
+import type { LucideIcon } from "lucide-react";
 import {
   Sparkles,
   Smartphone,
@@ -6,50 +6,56 @@ import {
   Search,
   Layers,
   LifeBuoy,
-} from 'lucide-react'
+} from "lucide-react";
 
 export interface WhyUsItem {
-  id: string
-  icon: LucideIcon
-  title: string
-  description: string
+  id: string;
+  icon: LucideIcon;
+  title: string;
+  description: string;
 }
 
 export const whyUs: WhyUsItem[] = [
   {
-    id: 'custom-built',
+    id: "custom-built",
     icon: Sparkles,
-    title: 'Custom-Built, Not Templated',
-    description: 'Every site is designed and coded around your business — no drag-and-drop themes, no cookie-cutter layouts.',
+    title: "Built Around Your Business",
+    description:
+      "Every site is designed and coded around your business — no drag-and-drop themes, no cookie-cutter layouts.",
   },
   {
-    id: 'mobile-first',
+    id: "mobile-first",
     icon: Smartphone,
-    title: 'Mobile-First Design',
-    description: 'More than half your visitors are on a phone. We design for that reality first, then scale up.',
+    title: "Never Lose a Mobile Visitor",
+    description:
+      "More than half your visitors are on a phone. We design for that reality first, then scale up.",
   },
   {
-    id: 'fast-performance',
+    id: "fast-performance",
     icon: Zap,
-    title: 'Built for Speed',
-    description: 'Lean code and optimized assets mean pages that load fast — because slow sites lose customers.',
+    title: "Speed That Keeps Customers",
+    description:
+      "Lean code and optimized assets mean pages that load fast — because slow sites lose customers.",
   },
   {
-    id: 'seo-friendly',
+    id: "seo-friendly",
     icon: Search,
-    title: 'SEO-Friendly Foundation',
-    description: 'Semantic markup and clean structure help your site get found by the people searching for you.',
+    title: "Get Found by the Right People",
+    description:
+      "Semantic markup and clean structure help your site get found by the people searching for you.",
   },
   {
-    id: 'scalable',
+    id: "scalable",
     icon: Layers,
-    title: 'Scalable Solutions',
-    description: 'Your site grows with your business — new pages, features, and content without a rebuild.',
+    title: "Grows With You, No Rebuild",
+    description:
+      "Your site grows with your business — new pages, features, and content without a rebuild.",
   },
   {
-    id: 'ongoing-support',
+    id: "ongoing-support",
     icon: LifeBuoy,
-    title: 'Ongoing Support',
-    description: "We don't disappear at launch. You get a partner who's there for updates and improvements.",
+    title: "A Partner After Launch, Too",
+    description:
+      "We don't disappear at launch. You get a partner who's there for updates and improvements.",
   },
-]
+];
