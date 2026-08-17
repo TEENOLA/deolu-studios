@@ -1,6 +1,6 @@
-# deolustudios
+# deolustudio
 
-A premium, conversion-focused marketing site for **deolustudios**, a custom web design & development studio. Built with React, Vite, and Tailwind CSS.
+A premium, conversion-focused marketing site for **deolustudio**, a custom web design & development studio. Built with React, Vite, and Tailwind CSS.
 
 ## Getting started
 
@@ -67,6 +67,8 @@ Same pattern: edit the matching file in `src/data/` and the UI updates automatic
 
 ## Design tokens
 
-Colors, fonts, and animation keyframes are defined in `tailwind.config.js` and `src/index.css`, derived from the deolustudios logo (blue `#5B6EF5` → violet `#8B5CF6` gradient on a near-black background).
+Colors, fonts, and animation keyframes are defined in `tailwind.config.js` and `src/index.css`, derived from the deolustudio logo (blue `#5B6EF5` → violet `#8B5CF6` gradient on a near-black background).
+
 # deolu-studios
+
 # deolu-studios

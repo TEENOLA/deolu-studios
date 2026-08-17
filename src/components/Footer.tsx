@@ -31,11 +31,11 @@ export default function Footer() {
             >
               <img
                 src={logo}
-                alt="deolustudios"
+                alt="deolustudio"
                 className="h-8 w-8 rounded-lg"
               />
               <span className="font-display text-lg font-semibold text-mist-50">
-                deolustudios
+                deolustudio
               </span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-mist-400">
@@ -111,10 +111,10 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/[0.06] pt-8 sm:flex-row">
           <p className="text-xs text-mist-500">
-            © {new Date().getFullYear()} deolustudios. All rights reserved.
+            © {new Date().getFullYear()} deolustudio. All rights reserved.
           </p>
           <p className="text-xs text-mist-500">
-            Designed &amp; built by deolustudios.
+            Designed &amp; built by deolustudio.
           </p>
         </div>
       </div>

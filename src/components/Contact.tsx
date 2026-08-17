@@ -78,13 +78,13 @@ export default function Contact() {
 
                 <div className="mt-8 space-y-5">
                   <a
-                    href="mailto:hello@deolustudios.com"
+                    href="mailto:hello@deolustudio.com"
                     className="flex items-center gap-3 text-sm text-mist-200 hover:text-brand-blueLight"
                   >
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gradient-soft">
                       <Mail size={17} className="text-brand-blueLight" />
                     </span>
-                    deolustudios.dev@gmail.com
+                    deolustudio.dev@gmail.com
                   </a>
                   <div className="flex items-center gap-3 text-sm text-mist-200 hover:text-brand-blueLight">
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gradient-soft">
