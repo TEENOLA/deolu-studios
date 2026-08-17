@@ -84,7 +84,7 @@ export default function Contact() {
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gradient-soft">
                       <Mail size={17} className="text-brand-blueLight" />
                     </span>
-                    deolustudio.dev@gmail.com
+                    hello@deolustudio.com
                   </a>
                   <div className="flex items-center gap-3 text-sm text-mist-200 hover:text-brand-blueLight">
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gradient-soft">
