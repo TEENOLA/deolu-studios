@@ -60,7 +60,7 @@ export const projects: Project[] = [
     thumbnail: clogistics,
     description:
       "A logistics company site with a mock package-tracking flow, built as a speculative pitch for a real courier business.",
-    technologies: ["React", "Tailwind CSS", "Mapbox"],
+    technologies: ["React", "Tailwind CSS", "Vite"],
     liveUrl: "https://cl-logistics-tau.vercel.app/",
     featured: true,
   },
