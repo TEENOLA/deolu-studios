@@ -8,6 +8,7 @@ import invoice from "../assets/cbc-invoice.png";
 import velvet from "../assets/velvet.png";
 import omotola from "../assets/omotola.png";
 import jide from "../assets/jide.png";
+import komson from "../assets/komson.png";
 
 export type ProjectCategory =
   | "Business"
@@ -82,6 +83,17 @@ export const projects: Project[] = [
       "A full business site for a bakery and catering brand — menu showcase, catering inquiry form, and a warm, appetite-driven visual identity.",
     technologies: ["React", "Vite", "Tailwind CSS"],
     liveUrl: "https://ade-sweet-crumbs.netlify.app/",
+    featured: true,
+  },
+  {
+    id: "komson-resorts",
+    title: "Komson Resorts",
+    category: "Business",
+    thumbnail: komson,
+    description:
+      "A premium, multi-page website for Komson Resorts, a beachfront resort in Ajah, Lagos, Nigeria.",
+    technologies: ["React", "Vite", "Tailwind CSS"],
+    liveUrl: "https://komson-resorts.vercel.app/",
     featured: true,
   },
   {
