@@ -9,6 +9,7 @@ import velvet from "../assets/velvet.png";
 import omotola from "../assets/omotola.png";
 import jide from "../assets/jide.png";
 import komson from "../assets/komson.png";
+import clogistics from "../assets/clogistics.png";
 
 export type ProjectCategory =
   | "Business"
@@ -53,6 +54,17 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: "c-logistics",
+    title: "Custom Logistics",
+    category: "Business",
+    thumbnail: clogistics,
+    description:
+      "A logistics company site with a mock package-tracking flow, built as a speculative pitch for a real courier business.",
+    technologies: ["React", "Tailwind CSS", "Mapbox"],
+    liveUrl: "https://cl-logistics-tau.vercel.app/",
+    featured: true,
+  },
+  {
     id: "apex-details",
     title: "Apex Detailing",
     category: "Landing Pages",
@@ -63,17 +75,7 @@ export const projects: Project[] = [
     liveUrl: "https://ade-apex-detail.netlify.app",
     featured: true,
   },
-  {
-    id: "glp-logistics",
-    title: "GLP Logistics",
-    category: "Landing Pages",
-    thumbnail: glp,
-    description:
-      "A logistics company site with a mock package-tracking flow, built as a speculative pitch for a real courier business.",
-    technologies: ["React", "Tailwind CSS", "Mapbox"],
-    liveUrl: "https://glp-logistics.vercel.app/",
-    featured: false,
-  },
+
   {
     id: "sweet-crumbs",
     title: "Sweet Crumbs Bakery",
@@ -95,6 +97,17 @@ export const projects: Project[] = [
     technologies: ["React", "Vite", "Tailwind CSS"],
     liveUrl: "https://komson-resorts.vercel.app/",
     featured: true,
+  },
+  {
+    id: "glp-logistics",
+    title: "GLP Logistics",
+    category: "Landing Pages",
+    thumbnail: glp,
+    description:
+      "A logistics company site with a mock package-tracking flow, built as a speculative pitch for a real courier business.",
+    technologies: ["React", "Tailwind CSS", "Mapbox"],
+    liveUrl: "https://glp-logistics.vercel.app/",
+    featured: false,
   },
   {
     id: "omotola-firm",
