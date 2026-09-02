@@ -120,17 +120,17 @@ export const projects: Project[] = [
     liveUrl: "https://omotola-and-partners.vercel.app",
     featured: true,
   },
-  {
-    id: "fresh-cuts",
-    title: "Fresh Cuts ATL",
-    category: "Landing Pages",
-    thumbnail: fresh,
-    description:
-      "A clean, booking-first landing page for an Atlanta barbershop — built to turn walk-in interest into scheduled appointments.",
-    technologies: ["React", "Tailwind CSS"],
-    liveUrl: "https://ade-fresh-cuts.netlify.app/",
-    featured: true,
-  },
+  // {
+  //   id: "fresh-cuts",
+  //   title: "Fresh Cuts ATL",
+  //   category: "Landing Pages",
+  //   thumbnail: fresh,
+  //   description:
+  //     "A clean, booking-first landing page for an Atlanta barbershop — built to turn walk-in interest into scheduled appointments.",
+  //   technologies: ["React", "Tailwind CSS"],
+  //   liveUrl: "https://ade-fresh-cuts.netlify.app/",
+  //   featured: true,
+  // },
   {
     id: "modern-auto-spa",
     title: "Modern Auto Spa",
