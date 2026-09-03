@@ -1,61 +1,33 @@
 import type { LucideIcon } from "lucide-react";
-import {
-  Sparkles,
-  Smartphone,
-  Zap,
-  Search,
-  Layers,
-  LifeBuoy,
-} from "lucide-react";
+import { Compass, Lightbulb, ArrowRight } from "lucide-react";
 
-export interface WhyUsItem {
+export interface WhyPillar {
   id: string;
   icon: LucideIcon;
   title: string;
   description: string;
 }
 
-export const whyUs: WhyUsItem[] = [
+export const whyPillars: WhyPillar[] = [
   {
-    id: "custom-built",
-    icon: Sparkles,
-    title: "Built Around Your Business",
+    id: "business-first",
+    icon: Compass,
+    title: "Business-first thinking",
     description:
-      "Every site is designed and coded around your business — no drag-and-drop themes, no cookie-cutter layouts.",
+      "We start with your business, your customers, and the action you want visitors to take. The goal isn't simply to build a website. It's to create a digital experience that supports the way your business actually works.",
   },
   {
-    id: "mobile-first",
-    icon: Smartphone,
-    title: "Never Lose a Mobile Visitor",
+    id: "clarity",
+    icon: Lightbulb,
+    title: "Clarity that builds confidence",
     description:
-      "More than half your visitors are on a phone. We design for that reality first, then scale up.",
+      "People should understand what you offer, why it matters, and why they should trust you without having to figure it out themselves. We turn complicated offers into clear, easy-to-navigate experiences.",
   },
   {
-    id: "fast-performance",
-    icon: Zap,
-    title: "Speed That Keeps Customers",
+    id: "moves-people-forward",
+    icon: ArrowRight,
+    title: "Designed to move people forward",
     description:
-      "Lean code and optimized assets mean pages that load fast — because slow sites lose customers.",
-  },
-  {
-    id: "seo-friendly",
-    icon: Search,
-    title: "Get Found by the Right People",
-    description:
-      "Semantic markup and clean structure help your site get found by the people searching for you.",
-  },
-  {
-    id: "scalable",
-    icon: Layers,
-    title: "Grows With You, No Rebuild",
-    description:
-      "Your site grows with your business — new pages, features, and content without a rebuild.",
-  },
-  {
-    id: "ongoing-support",
-    icon: LifeBuoy,
-    title: "A Partner After Launch, Too",
-    description:
-      "We don't disappear at launch. You get a partner who's there for updates and improvements.",
+      "Whether the next step is a call, enquiry, booking, consultation, or purchase, we make that path obvious — across desktop and mobile.",
   },
 ];

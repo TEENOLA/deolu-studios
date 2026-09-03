@@ -25,13 +25,14 @@ export default function Hero() {
 
           <h1 className="text-4xl font-semibold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
             Turn Your Website Into a{" "}
-            <span className="text-gradient">24/7 Salesperson</span> for Your
+            <span className="text-gradient">better business tool</span> for Your
             Business
           </h1>
 
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-mist-300 sm:text-lg">
-            Get a fast, responsive, conversion-focused website — built around
-            your brand, your business goals, and your budget.
+            Your website should do more than look good. It should help potential
+            customers understand what you offer, trust your business, and know
+            exactly what to do next.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -39,7 +40,7 @@ export default function Hero() {
               onClick={() => scrollToSection("#contact")}
               className="btn-primary w-full sm:w-auto"
             >
-              Start Your Project
+              Get a free website opportunity audit
               <ArrowRight size={16} />
             </button>
             <button

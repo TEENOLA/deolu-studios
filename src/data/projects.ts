@@ -54,15 +54,15 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "c-logistics",
-    title: "Custom Logistics",
-    category: "Business",
-    thumbnail: clogistics,
+    id: "glp-logistics",
+    title: "GLP Logistics",
+    category: "Landing Pages",
+    thumbnail: glp,
     description:
       "A logistics company site with a mock package-tracking flow, built as a speculative pitch for a real courier business.",
-    technologies: ["React", "Tailwind CSS", "Vite"],
-    liveUrl: "https://cl-logistics-tau.vercel.app/",
-    featured: true,
+    technologies: ["React", "Tailwind CSS", "Mapbox"],
+    liveUrl: "https://glp-logistics.vercel.app/",
+    featured: false,
   },
   {
     id: "apex-details",
@@ -99,17 +99,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "glp-logistics",
-    title: "GLP Logistics",
-    category: "Landing Pages",
-    thumbnail: glp,
-    description:
-      "A logistics company site with a mock package-tracking flow, built as a speculative pitch for a real courier business.",
-    technologies: ["React", "Tailwind CSS", "Mapbox"],
-    liveUrl: "https://glp-logistics.vercel.app/",
-    featured: false,
-  },
-  {
     id: "omotola-firm",
     title: "Omotola & Partners LLP",
     category: "Business",
@@ -120,17 +109,17 @@ export const projects: Project[] = [
     liveUrl: "https://omotola-and-partners.vercel.app",
     featured: true,
   },
-  // {
-  //   id: "fresh-cuts",
-  //   title: "Fresh Cuts ATL",
-  //   category: "Landing Pages",
-  //   thumbnail: fresh,
-  //   description:
-  //     "A clean, booking-first landing page for an Atlanta barbershop — built to turn walk-in interest into scheduled appointments.",
-  //   technologies: ["React", "Tailwind CSS"],
-  //   liveUrl: "https://ade-fresh-cuts.netlify.app/",
-  //   featured: true,
-  // },
+  {
+    id: "fresh-cuts",
+    title: "Fresh Cuts ATL",
+    category: "Landing Pages",
+    thumbnail: fresh,
+    description:
+      "A clean, booking-first landing page for an Atlanta barbershop — built to turn walk-in interest into scheduled appointments.",
+    technologies: ["React", "Tailwind CSS"],
+    liveUrl: "https://ade-fresh-cuts.netlify.app/",
+    featured: true,
+  },
   {
     id: "modern-auto-spa",
     title: "Modern Auto Spa",
@@ -140,6 +129,17 @@ export const projects: Project[] = [
       "A polished business site for a car detailing company, with a before/after showcase and service tiers built to justify premium pricing.",
     technologies: ["React", "Tailwind CSS"],
     liveUrl: "https://modern-autospa.netlify.app/",
+    featured: true,
+  },
+  {
+    id: "c-logistics",
+    title: "Custom Logistics",
+    category: "Business",
+    thumbnail: clogistics,
+    description:
+      "A logistics company site with a mock package-tracking flow, built as a speculative pitch for a real courier business.",
+    technologies: ["React", "Tailwind CSS", "Vite"],
+    liveUrl: "https://cl-logistics-tau.vercel.app/",
     featured: true,
   },
   {

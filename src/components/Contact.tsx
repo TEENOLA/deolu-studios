@@ -1,8 +1,9 @@
 import { useState, type FormEvent } from "react";
+import { useSearchParams } from "react-router-dom";
 import {
   Mail,
-  Phone,
-  MapPin,
+  Calendar,
+  MessageCircle,
   Send,
   CheckCircle2,
   AlertCircle,
@@ -18,7 +19,20 @@ const projectTypes = [
   "Other",
 ];
 
+// Currency-neutral so the form reads the same whether a visitor is
+// thinking in dollars, naira, euros, or anything else.
+const budgetRanges = [
+  "Just getting started",
+  "Small project",
+  "Growing business",
+  "Larger / ongoing project",
+  "Not sure yet",
+];
+
 export default function Contact() {
+  const [searchParams] = useSearchParams();
+  const isAuditIntent = searchParams.get("intent") === "audit";
+
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [hasError, setHasError] = useState(false);
@@ -53,14 +67,12 @@ export default function Contact() {
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="eyebrow">Get In Touch</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Let's start your project
+            Let's look at where things stand
           </h2>
           <p className="mt-4 text-mist-400">
-            Tell us a bit about your business and what you're looking for —
-            we'll get back to you within one business day. Every project starts
-            with a conversation about your goals, and we'll shape a package that
-            fits your budget, whether you're just getting started or ready for a
-            full rebuild.
+            Tell us a bit about your business — whether you have a site already
+            or you're starting from scratch — and we'll send back a few specific
+            ways to make it work harder for you. No cost, no obligation
           </p>
         </Reveal>
 
@@ -73,31 +85,45 @@ export default function Contact() {
                   Contact information
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-mist-400">
-                  Prefer to reach out directly? Use any of the details below.
+                  Remote and working with clients worldwide. Prefer to reach out
+                  directly? Use any of the options below.
                 </p>
 
                 <div className="mt-8 space-y-5">
                   <a
-                    href="mailto:hello@deolustudio.com"
+                    href="mailto:deolustudios.dev@gmail.com"
                     className="flex items-center gap-3 text-sm text-mist-200 hover:text-brand-blueLight"
                   >
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gradient-soft">
                       <Mail size={17} className="text-brand-blueLight" />
                     </span>
-                    hello@deolustudio.com
+                    deolustudios.dev@gmail.com
                   </a>
-                  <div className="flex items-center gap-3 text-sm text-mist-200 hover:text-brand-blueLight">
+                  <a
+                    href="https://calendly.com/deolustudios/consultation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-sm text-mist-200 hover:text-brand-blueLight"
+                  >
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gradient-soft">
-                      <Phone size={17} className="text-brand-blueLight" />
+                      <Calendar size={17} className="text-brand-blueLight" />
                     </span>
-                    +234 812 051 1818 (WHATSAPP)
-                  </div>
-                  <div className="flex items-center gap-3 text-sm text-mist-200">
+                    Book a call — pick a time that works for you
+                  </a>
+                  <a
+                    href="https://wa.me/2348120511818"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-sm text-mist-200 hover:text-brand-blueLight"
+                  >
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gradient-soft">
-                      <MapPin size={17} className="text-brand-blueLight" />
+                      <MessageCircle
+                        size={17}
+                        className="text-brand-blueLight"
+                      />
                     </span>
-                    Remote — working with clients worldwide
-                  </div>
+                    Message us on WhatsApp
+                  </a>
                 </div>
               </div>
 
@@ -123,13 +149,6 @@ export default function Contact() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
-                  <p className="hidden">
-                    <label>
-                      Don't fill this out if you're human:{" "}
-                      <input name="_gotcha" />
-                    </label>
-                  </p>
-
                   <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                     <Field
                       label="Name"
@@ -161,6 +180,12 @@ export default function Contact() {
                     />
                   </div>
 
+                  <SelectField
+                    label="Budget (optional)"
+                    name="budget"
+                    options={budgetRanges}
+                  />
+
                   <div>
                     <label
                       htmlFor="message"
@@ -173,6 +198,11 @@ export default function Contact() {
                       name="message"
                       required
                       rows={5}
+                      defaultValue={
+                        isAuditIntent
+                          ? "I'd like to request a free Website Opportunity Audit for my site."
+                          : undefined
+                      }
                       placeholder="Tell us about your business and what you're looking to build..."
                       className="w-full rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 text-sm text-mist-100 placeholder:text-mist-500 focus:border-brand-blue/50 focus:outline-none"
                     />
