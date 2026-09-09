@@ -42,21 +42,6 @@ export default function Footer() {
               Websites built to turn visitors into customers — fast,
               conversion-focused, and made to help your business grow online.
             </p>
-            {/* <div className="mt-6 flex gap-3">
-              {socialLinks.map((social) => {
-                const Icon = socialIcons[social.label];
-                return (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    aria-label={social.label}
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-mist-400 transition-colors hover:border-white/25 hover:text-mist-50"
-                  >
-                    {Icon && <Icon size={15} />}
-                  </a>
-                );
-              })}
-            </div> */}
           </div>
 
           <div>
