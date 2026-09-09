@@ -1,16 +1,8 @@
 import { useNavigate, useLocation, Link } from "react-router-dom";
-import { Twitter, Linkedin, Instagram, Github } from "lucide-react";
-import { navLinks, socialLinks } from "../data/navigation";
+import { navLinks } from "../data/navigation";
 import { services } from "../data/services";
 import { goToHomeSection } from "../utils/scrollTo";
 import logo from "../assets/logo.png";
-
-const socialIcons: Record<string, typeof Twitter> = {
-  Twitter,
-  LinkedIn: Linkedin,
-  Instagram,
-  GitHub: Github,
-};
 
 export default function Footer() {
   const navigate = useNavigate();
