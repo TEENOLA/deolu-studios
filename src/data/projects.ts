@@ -33,17 +33,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "velvet-glow-booking",
-    title: "Velvet Glow",
-    category: "Web Apps",
-    thumbnail: velvet,
-    description:
-      "A full booking platform for salons and barbershops — live client booking flow, a multi-step salon onboarding wizard, and a real-time dashboard for tracking appointments, revenue, and no-show rates.",
-    technologies: ["React", "TypeScript", "Tailwind CSS"],
-    liveUrl: "https://velvet-glow-beige.vercel.app",
-    featured: true,
-  },
-  {
     id: "kaysith-pharma",
     title: "Kaysith Pharmaceuticals",
     category: "Business",
@@ -87,7 +76,17 @@ export const projects: Project[] = [
     liveUrl: "https://ade-apex-detail.netlify.app",
     featured: true,
   },
-
+  {
+    id: "velvet-glow-booking",
+    title: "Velvet Glow",
+    category: "Web Apps",
+    thumbnail: velvet,
+    description:
+      "A full booking platform for salons and barbershops — live client booking flow, a multi-step salon onboarding wizard, and a real-time dashboard for tracking appointments, revenue, and no-show rates.",
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    liveUrl: "https://velvet-glow-beige.vercel.app",
+    featured: true,
+  },
   {
     id: "sweet-crumbs",
     title: "Sweet Crumbs Bakery",
