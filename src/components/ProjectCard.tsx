@@ -58,9 +58,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             View Live
             <ArrowUpRight size={14} />
           </a>
-          <button className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-full border border-white/15 px-4 py-2.5 text-sm font-semibold text-mist-100 transition-colors hover:border-white/30 hover:bg-white/[0.05]">
-            View Details
-          </button>
+
           {project.githubUrl && (
             <a
               href={project.githubUrl}
