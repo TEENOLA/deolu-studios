@@ -10,6 +10,7 @@ import omotola from "../assets/omotola.png";
 import jide from "../assets/jide.png";
 import komson from "../assets/komson.png";
 import clogistics from "../assets/clogistics.png";
+import kaysith from "../assets/kaysith.png";
 
 export type ProjectCategory =
   | "Business"
@@ -40,6 +41,17 @@ export const projects: Project[] = [
       "A full booking platform for salons and barbershops — live client booking flow, a multi-step salon onboarding wizard, and a real-time dashboard for tracking appointments, revenue, and no-show rates.",
     technologies: ["React", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://velvet-glow-beige.vercel.app",
+    featured: true,
+  },
+  {
+    id: "kaysith-pharma",
+    title: "Kaysith Pharmaceuticals",
+    category: "Business",
+    thumbnail: kaysith,
+    description:
+      "A corporate website for Kaysith Pharamaceuticals, a Nigerian-based pharma company",
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    liveUrl: "kaysith.vercel.app",
     featured: true,
   },
   {
