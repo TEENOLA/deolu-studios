@@ -40,7 +40,7 @@ export const projects: Project[] = [
     description:
       "A corporate website for Kaysith Pharamaceuticals, a Nigerian-based pharma company",
     technologies: ["React", "TypeScript", "Tailwind CSS"],
-    liveUrl: "kaysith.vercel.app",
+    liveUrl: "https://kaysith.vercel.app",
     featured: true,
   },
   {
