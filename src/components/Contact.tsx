@@ -1,13 +1,15 @@
 import { useState, type FormEvent } from "react";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import {
   Mail,
   Calendar,
   MessageCircle,
+  ClipboardList,
   Send,
   CheckCircle2,
   AlertCircle,
 } from "lucide-react";
+
 import Reveal from "./Reveal";
 
 const projectTypes = [
@@ -124,6 +126,18 @@ export default function Contact() {
                     </span>
                     Message us on WhatsApp
                   </a>
+                  <Link
+                    to="/quick-start"
+                    className="flex items-center gap-3 text-sm text-mist-200 hover:text-brand-blueLight"
+                  >
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-gradient-soft">
+                      <ClipboardList
+                        size={17}
+                        className="text-brand-blueLight"
+                      />
+                    </span>
+                    Not sure what to write? Answer a few quick questions
+                  </Link>
                 </div>
               </div>
 

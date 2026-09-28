@@ -77,28 +77,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "velvet-glow-booking",
-    title: "Velvet Glow",
-    category: "Web Apps",
-    thumbnail: velvet,
-    description:
-      "A full booking platform for salons and barbershops — live client booking flow, a multi-step salon onboarding wizard, and a real-time dashboard for tracking appointments, revenue, and no-show rates.",
-    technologies: ["React", "TypeScript", "Tailwind CSS"],
-    liveUrl: "https://velvet-glow-beige.vercel.app",
-    featured: true,
-  },
-  {
-    id: "sweet-crumbs",
-    title: "Sweet Crumbs Bakery",
-    category: "Business",
-    thumbnail: sweet,
-    description:
-      "A full business site for a bakery and catering brand — menu showcase, catering inquiry form, and a warm, appetite-driven visual identity.",
-    technologies: ["React", "Vite", "Tailwind CSS"],
-    liveUrl: "https://ade-sweet-crumbs.netlify.app/",
-    featured: true,
-  },
-  {
     id: "komson-resorts",
     title: "Komson Resorts",
     category: "Business",
@@ -118,6 +96,28 @@ export const projects: Project[] = [
       "A premium, multi-page website for Omotola & Partners LLP, a fictional full-service commercial law firm based in Lagos, Nigeria.",
     technologies: ["React", "Vite", "Tailwind CSS"],
     liveUrl: "https://omotola-and-partners.vercel.app",
+    featured: true,
+  },
+  {
+    id: "sweet-crumbs",
+    title: "Sweet Crumbs Bakery",
+    category: "Business",
+    thumbnail: sweet,
+    description:
+      "A full business site for a bakery and catering brand — menu showcase, catering inquiry form, and a warm, appetite-driven visual identity.",
+    technologies: ["React", "Vite", "Tailwind CSS"],
+    liveUrl: "https://ade-sweet-crumbs.netlify.app/",
+    featured: true,
+  },
+  {
+    id: "velvet-glow-booking",
+    title: "Velvet Glow",
+    category: "Web Apps",
+    thumbnail: velvet,
+    description:
+      "A full booking platform for salons and barbershops — live client booking flow, a multi-step salon onboarding wizard, and a real-time dashboard for tracking appointments, revenue, and no-show rates.",
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    liveUrl: "https://velvet-glow-beige.vercel.app",
     featured: true,
   },
   {
